@@ -1,0 +1,110 @@
+@import url('./main.css');
+
+.header {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 25px;
+    background: var(--secondary-background);
+}
+
+.header-text {
+    padding: 10px 10%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+}
+
+.lead-text {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.navbar {
+    padding: 10px 10%;
+    background: var(--primary-background);
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.nav-active a {
+    color: var(--contrasting-text-color);
+}
+
+.nav-active a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--text-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s ease;
+}
+
+.nav-active a:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--contrasting-text-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.lead-button {
+    padding: 15px 32px;
+    text-align: center;
+    border: 1px solid var(--text-color);
+    background-color: var(--contrasting-text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.5s ease;
+    display: block;
+    font-size: 16px;
+}
+
+.lead-button:hover {
+    background-color: var(--contrasting-background);
+    border: 2px solid var(--text-color);
+    transform: scale(1.1);
+}
+
+.brand {
+    transition: 0.5s ease;
+    height: 100px;
+}
+
+.brand:hover {
+    transform: scale(1.3);
+}

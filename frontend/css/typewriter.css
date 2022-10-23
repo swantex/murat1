@@ -1,0 +1,5 @@
+@import url('./main.css');
+
+.typewrite > .wrap { 
+    border-right: 0.08em solid var(--text-color);
+}

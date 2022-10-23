@@ -1,0 +1,34 @@
+h1 {
+    font-size: inherit, 72px;
+    font-weight: inherit, bold;
+}
+
+h2 {
+    font-size: inherit, 60px;
+    font-weight: inherit, bold;
+}
+
+h3 {
+    font-size: inherit, 48px;
+    font-weight: inherit, 700;
+}
+
+h4 {
+    font-size: inherit, 40px;
+    font-weight: inherit, 600;
+}
+
+h5 {
+    font-size: inherit, 30px;
+    font-weight: inherit, 500;
+}
+
+h6 {
+    font-size: inherit, 24px;
+    font-weight: inherit, 400;
+}
+
+p {
+    font-size: inherit, 16px;
+    font-weight: inherit, normal;
+}
