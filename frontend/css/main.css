@@ -181,6 +181,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
+    width: -moz-fit-content;
     position: relative;
     display: inline-block;
 }

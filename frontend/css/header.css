@@ -4,12 +4,19 @@
     width: 100%;
     height: fit-content;
     padding-bottom: 25px;
-    background: var(--secondary-background);
+    background: var(--primary-background);
+    padding-bottom:0 ;
+    margin: 0;
 }
 
 .header-text {
-    padding: 10px 10%;
     font-size: 30px;
+    color: var(--text-color);
+    /* white-space: nowrap;
+    z-index: 9;*/
+    max-width: 75%; 
+    /* THE POSITION HAS TO BE RELATIVE REEEEEEEEEEEEEEEE */
+    position: relative; 
 }
 
 .header-text h1 {
@@ -107,4 +114,19 @@
 
 .brand:hover {
     transform: scale(1.3);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    padding: 100px;
+}
+
+section #mountains {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

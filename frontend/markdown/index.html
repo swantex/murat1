@@ -17,17 +17,20 @@
         <!-- css -->
         <link rel="stylesheet" href="../css/animations.css">
         <link rel="stylesheet" href="../css/confetti.css">
+        <link rel="stylesheet" href="../css/contact.css">
         <link rel="stylesheet" href="../css/default.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/skills.css">
+        <link rel="stylesheet" href="../css/stream.css">
 
         <!-- js -->
         <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
         <script src="../js/confetti.js"></script>
         <script src="../js/typewriter.js"></script>
+        <script src="../js/parralax.js"></script>
         <script src="https://kit.fontawesome.com/290032116a.js" crossorigin="anonymous"></script>
 
         <!-- styling -->
@@ -37,6 +40,7 @@
                 color: white;
                 background-color: var(--secondary-background);
                 src: url('../assets/fonts/GothamMedium.ttf');
+                scroll-behavior: smooth;
             }
 
             @font-face {
@@ -47,7 +51,7 @@
     </head>
     <body>
         <div class="header">
-            <div class="navbar">
+            <div class="navbar" id="navbarParalax">
                 <nav>
                     <div class="navbar-brand">
                         <a href="https://www.nigamanth.com/">
@@ -83,37 +87,60 @@
                 </nav>
             </div>
 
-            <div class="header-text">
-                <h1>Hi, I'm Nigamanth <span class="highlight">Srivatsan!</span></h1>
-                <p class="lead-text">Hey! I'm <span class="bottom-lower"> Nigamanth Srivatsan </span> and I'm currently a student who is passionate about <span class="bottom-lower"> Mathematics, Physics, Chemistry </span> and Computer Science.</p>
-                <a href="#whoAmI">
-                    <button class="confettiButton"> 
-                        Learn more
-                    </button>
-                </a>
-            </div>
+            <section>
+                <img src="../assets/15Z_2102.w026.n002.163B.p1.163.jpg" alt="The mountains" id="mountains">
+                <div class="header-text">
+                    <h1>Hi, I'm Nigamanth <span class="highlight">Srivatsan!</span></h1>
+                    <p class="lead-text">Hey! I'm <span class="bottom-lower"> Nigamanth Srivatsan </span> and I'm currently a student who is passionate about <span class="bottom-lower"> Mathematics, Physics, Chemistry </span>  and <span class="bottom-lower"> Computer Science. </span>   </p>
+                    <a href="#whoAmI">
+                        <button class="confettiButton"> 
+                            Learn more
+                        </button>
+                    </a>
+                </div>
+                <br> <br>
+            </section>
         </div>
 
-        <div class="whoAmI" id="whoAmI">
-            <div class="headings">
-                <h1>My <span class="highlight"> Qualities</span></h1>
-                <p>These are the qualities which I believe are prerequisites for <span class="highlight"> success</span></p>
-            </div>
+        <div class="stream">
+            <h1>My Stream (primary subjects)</h1>
 
-            <div class="qualities">
-                <div class="quality">
-                    <h3>Ambition</h3>
-                    <p>I have the ambition to be successful, because if you don't want something then you cannot get it.</p>
+            <div class="icons">
+                <div class="icon">
+                    <img src="../assets/icons/mathematics-icon.jpg" alt="" width="72" height="72">
+                    <p id="math">
+                        Mathematics
+                    </p>
+                </div>
+    
+                <div class="icon">
+                    <img src="../assets/icons/physics-icon.png" alt="" width="72" height="72">
+                    <p id="phys">
+                        Physics
+                    </p>
+                </div>
+    
+                <div class="icon">
+                    <img src="../assets/icons/chemistry-icon-removebg-preview.png" alt="" width="72" height="72">
+                    <p id="chem">Chemistry</p>
                 </div>
 
-                <div class="quality">
-                    <h3>Logic</h3>
-                    <p>People say you shouldn't quit, I say you should do whatever logic dictates. If logic is on your side, you can never be wrong. <br> <br> In my book, everything is right if proven to be so.</p>
+                <div class="icon">
+                    <img src="../assets/icons/computer-icon.jpg" alt="" width="72" height="72" style="border-radius: 20%;">
+                    <p id="comp">
+                        Computer Science
+                    </p>
                 </div>
 
-                <div class="quality">
-                    <h3>Leadership</h3>
-                    <p>Leadership is one of the most important qualities, you have to stand by your work.</p>
+                <div class="icon">
+                    <img src="../assets/icons/economics-icon.png" alt="" width="72" height="72">
+                    <p>
+                        Economics
+                    </p>
+                </div>
+
+                <div class="icon">
+                    <img src="../assets/icons/" alt="">
                 </div>
             </div>
         </div>
@@ -127,7 +154,7 @@
                     
                     <div class="amazedContent">
                         <p>
-                            People have wonderful ideas, but it's time to turn these ideas into products <br>
+                            People have wonderful ideas, but it's time to turn these ideas into products <br> <br>
                             I believe in executing and creating a product from a mere idea with a simple approach. 
                         </p>
                     </div>
@@ -140,6 +167,34 @@
             </div>
                 
         </div>
+
+        <form class="formContainer" action="../../backend/server/auth.php" method="post">
+            <h1>Contact Me!</h1>
+            <div class="form">
+                <div class="field">
+                    <label for="email" class="label">Email</label>  <br> 
+                    <input type="email" name="email" class="input" placeholder="" />
+                </div>
+
+                <div class="field">
+                    <label for="email" class="label">Subject</label>  <br> 
+                    <input type="email" name="subject" class="input" placeholder="" />
+                </div>
+    
+                <div class="field">
+                    <label for="password" class="label">Message</label> <br>
+                    <input type="password" class="input" placeholder="" />
+                </div>
+
+                <div class="formButtonContainer">
+                    <a href="">
+                        <button class="formButton">Send your message!</button>
+                    </a>
+                </div>
+            </div>  
+        </form>
+
+        
 
         <div class="footer">
             <ul class="footerItems">
