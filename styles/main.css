@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik/GraphikMedium.otf');
+}
+
+@font-face {
+    font-family: 'graphik-italic';
+    src: url('../fonts/graphik/GraphikMediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url('../fonts/graphik/GraphikBold.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #181818;
+    color: white;
+    font-family: 'graphik';
+}
+
+.light-mode {
+    background-color: white !important;
+    color: black !important;
+}
+
+.varied-light-mode {
+    color: black !important;
+    background-color: #197bc1;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D63F9C;
+}
+
+p.muted {
+    color: #999;
+}

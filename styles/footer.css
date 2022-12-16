@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik/GraphikMedium.otf');
+}
+
+@font-face {
+    font-family: 'graphik-italic';
+    src: url('../fonts/graphik/GraphikMediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url('../fonts/graphik/GraphikBold.otf');
+}
+
+@font-face {
+    font-family: 'graphik-light';
+    src: url('../fonts/graphik/GraphikLight.otf');
+}
+
+footer {
+    /* set at the bottom */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 1160px;
+    padding: 0 1rem;
+    display: block;
+}
+
+.footer-heading {
+
+}
+
+.footer-heading h1 {
+    font-size: 48px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    /* margin-left: 1.6rem; */
+}
+
+.footer-col {
+    position: relative;
+}
+
+/* .footer-col::after {
+    background-color: yellow;
+    height: 90px;
+    width: 5px;
+    position: absolute;
+    content: '';
+    right: -1.5rem;
+    top: 0;
+}
+
+.footer-col::before {
+    background-color: yellow;
+    height: 90px;
+    width: 5px;
+    position: absolute;
+    content: '';
+    left: -1.5rem;   
+    top: 0;
+} */
+
+.footer-col ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    font-family: 'graphik-light';
+    color: rgb(0, 153, 255);
+}

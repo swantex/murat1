@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik/GraphikMedium.otf');
+}
+
+@font-face {
+    font-family: 'graphik-italic';
+    src: url('../fonts/graphik/GraphikMediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url('../fonts/graphik/GraphikBold.otf');
+}
+
+.part-2 {
+    width: 100%;
+    min-height: 65vh;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    position: relative;
+    background-color: #171640;
+}
+
+.part-2 .focus {
+    color: yellow;
+}
+
+.part-2 .focus::after {
+    background-color: yellow;
+}
+
+.part-2-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.part-2 .content-title {
+    width: 100%;
+}
+
+.jumbotron {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 1160px;
+    padding: 0 1rem;
+}
+
+.jumbotron-wrapper {
+    display: block;
+}
+
+.content {
+    padding: 5rem 0 3rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-title {
+    font-size: 56px;
+    position: relative;
+    font-family: 'graphik-bold';
+}
+
+.content p {
+    font-family: 'graphik';
+    font-size: 1.25rem;
+}
+
+.float-right {
+    float: right;
+}
+
+.content p a {
+    color: aqua;
+    text-decoration: underline;
+    letter-spacing: 0.01rem;
+    transition: transform 0.5s ease;
+}
+
+.content p a:hover {
+    color: yellowgreen;
+    letter-spacing: 0.02rem;
+}
+
+.focus {
+    display: inline-block;
+    color: yellowgreen;
+    position: relative;
+}
+
+.focus::after {
+    content: '';
+    background-color: yellowgreen;
+    width: 100%;
+    height: 3px;
+    line-height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left bottom;
+    transition: transform 0.3s ease;
+}
+
+.focus:hover::after {
+    transform-origin: left bottom;
+    transform: scaleX(1);
+}
+
+@media screen and (min-width: 700px) {
+    .jumbotron {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .jumbotron-wrapper {
+        align-items: center;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 3fr 2fr;
+    }
+}

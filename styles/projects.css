@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik/GraphikMedium.otf');
+}
+
+@font-face {
+    font-family: 'graphik-italic';
+    src: url('../fonts/graphik/GraphikMediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url('../fonts/graphik/GraphikBold.otf');
+}
+
+.projects {
+    width: 100%;
+    height: 80vh;
+    padding-bottom: 15rem;
+    position: relative;
+    background-color: #181818;
+}
+
+@media (min-width: 1500px) {
+    .projects {
+        padding-bottom: 0rem;
+    }
+}
+
+
+
+.content #contentDivider {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: 0;
+    align-items: center;
+    padding: 0;
+}
+
+.content #contentDivider a {
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #252525;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0;
+    text-decoration: none;
+    gap: 0.25rem;
+    color: white;
+}
+
+.projects .focus {
+    color: #ffbf00;
+}
+
+.projects .focus::after {
+    background-color: #ffbf00;
+}
+
+.projects-preview {
+    display: grid;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.projects-preview > div {
+    flex: 1 1;
+}
+
+.project-card 
+{
+    background-color: #1f1f1f;
+    border: 1px solid #2c2c2c;
+    border-radius: 0.35rem;
+    padding: 1rem;
+    position: relative;
+}  
+
+
+.project-card .card-content span.time {
+    color: yellowgreen;
+    display: block;
+    font-family: monospace;
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+    margin-bottom: 1rem;
+}
+
+.project-card .card-content p {
+    color: #999;
+    font-family: 'graphik';
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.project-card .card-content a.card-heading {
+    border: 0;
+    text-decoration: none;
+    padding: 0;
+    margin: 0.1rem 0 0.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'graphik';
+}
+
+.project-card .card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-card .card-links a {
+    font-size: 1rem;
+    padding: 0.5rem 0.6rem;
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #555454;
+    border: 1px solid #2c2c2c;
+    border-radius: 25%;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0;
+    text-decoration: none;
+    gap: 0.25rem;
+    color: white;
+}
+
+.project-card .card-links a:hover {
+    background-color: #3a3636;
+}

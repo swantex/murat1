@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- default meta tags -->
+    <meta charset="UTF-8">
+    <link data-react-helmet="true" rel="shortcut icon" type="image/png" href="../media/images/blog.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Nigamanth Srivatsan's Blog</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../styles/blog.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../media/images/mailbox-removebg-preview.png" alt="" width="144" height="144">
+        </div>
+
+        <div>
+            <h1>Nigamanth's Blog</h1>
+        </div>
+    </header>
+
+    <div class="blogPostsContainer">
+        <div id="leftPadding">
+            <h1>My Blog Posts:</h1>
+            
+            <select name="filter" id="filter" aria-placeholder="Filter by tags" onchange="sortBlogPosts()">
+                <option disabled selected>Select a topic</option>
+                <option value="comp">Comp Science</option>
+                <option value="economics">Economics</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+            </select>
+
+            <p class="muted big-font">
+                These are my latest blog posts:
+            </p>            
+
+            <div class="blogGrid">
+
+                <div class="blogPost comp-science">
+                    <span class="comp-science-label">
+                        
+                    </span>
+
+                    <h3>Computer Science Blog </h3>
+                    <p>Blog Description.</p>
+
+                    <a href="./comp-science/">
+                        <button class="blogButton">Read More</button>
+                    </a>
+                </div>
+
+                <div class="blogPost physics">
+                    <span class="physics-label">
+                        Physics
+                    </span>
+
+                    <h3>Physics Blog Post</h3>
+                    <p>Blog Description.</p>
+
+                    <a href="">
+                        <button class="blogButton">Read More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="normal-padding">
+        <h2>Subscribe to my newsletter:</h1>
+        <div class="basic-flex">
+            <input type="email" name="" id="" placeholder="Enter your email">
+            <a href="" target="_blank">
+                <button>Subscribe</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="../logic/blogSort.js"></script>
+</body>
+</html>

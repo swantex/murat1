@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik/GraphikMedium.otf');
+}
+
+@font-face {
+    font-family: 'graphik-italic';
+    src: url('../fonts/graphik/GraphikMediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url('../fonts/graphik/GraphikBold.otf');
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar nav {
+
+}
+
+.nav-list {
+    list-style: none;
+    
+}
+
+.nav-item {
+    background-color: yellowgreen;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nav-item:hover {
+    background-color: rgb(234, 234, 15);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.nav-link img {
+    display: inline-block;
+}
+
+.nav-link span {
+    display: inline-block;
+}
+
+.toggle {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    margin-right: 3rem;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    background-color: #444;
+}

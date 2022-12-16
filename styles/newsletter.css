@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'graphik';
+    src: url('../fonts/graphik/GraphikMedium.otf');
+}
+
+@font-face {
+    font-family: 'graphik-italic';
+    src: url('../fonts/graphik/GraphikMediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'graphik-bold';
+    src: url('../fonts/graphik/GraphikBold.otf');
+}
+
+.newsletter {
+    width: 100%;
+    min-height: 50vh;
+    background-color: rgb(44, 8, 78);
+}
+
+.newsletter .focus {
+    color: aqua;
+}
+
+.newsletter .focus::after {
+    background-color: aqua;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.newsletter form a {
+    display: inline-flex;
+    position: relative;
+    text-decoration: none;
+}
+
+.newsletter form a button {
+    padding: 1rem;
+    color: white;
+    background-color: #252525;
+    font-family: 'graphik';
+    border-radius: 5px;
+    border: 1px solid yellowgreen;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.newsletter input {
+    padding: 1rem;
+    font-family: 'graphik';
+    font-weight: bold;
+    background-color: #252525;
+    display: inline-flex;
+    color: white;
+    border: 1px solid #181818;
+    transition: transform 0.5s ease;
+    border-radius: 6px;
+}
+
+.newsletter input:focus {    
+    border: 1px solid greenyellow;
+    transform: translate(0.5rem);
+}
+
+.newsletter input:valid {
+    color: yellowgreen;
+}
+
+.newsletter input:invalid {
+    color: orangered;
+}
