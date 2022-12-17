@@ -19,6 +19,23 @@
     background-color: rgb(44, 8, 78);
 }
 
+#newsletter.varied-light-mode {
+    background-color: #197bc1;
+    color: black;
+}
+
+#newsletter.varied-light-mode .focus {
+    color: rgb(19, 19, 242);
+}
+
+#newsletter.varied-light-mode .focus::after {
+    background-color: rgb(19, 19, 242);
+}
+
+#newsletter.varied-light-mode p.muted {
+    color: #222;
+}
+
 .newsletter .focus {
     color: aqua;
 }
@@ -60,6 +77,11 @@
     border: 1px solid #181818;
     transition: transform 0.5s ease;
     border-radius: 6px;
+}
+
+#newsletter.varied-light-mode input {
+    color: black;
+    background-color: #888;
 }
 
 .newsletter input:focus {    

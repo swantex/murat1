@@ -21,6 +21,7 @@
     background-color: #181818;
 }
 
+
 @media (min-width: 1500px) {
     .projects {
         padding-bottom: 0rem;
@@ -37,6 +38,11 @@
     border: 0;
     align-items: center;
     padding: 0;
+}
+
+#projects.light-mode .project-card {
+    background-color: #888;
+    border: 1px solid #999;
 }
 
 .content #contentDivider a {
@@ -101,6 +107,19 @@
     font-size: 0.9rem;
     line-height: 1.5;
     margin: 0;
+}
+#projects.light-mode .project-card .card-content p {
+    color: black;
+}
+
+#projects.light-mode .project-card .card-content a.card-heading {
+    color: black;
+}
+
+#projects.light-mode .project-card .card-links a {
+    color: white;
+    background-color: #252525;
+    border: 1px solid #888;
 }
 
 .project-card .card-content a.card-heading {

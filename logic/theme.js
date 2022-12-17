@@ -1,37 +1,48 @@
-// let mode = 'dark';
-// const items = [
-//     document.body,
-//     document.getElementById('footer'),
-//     document.getElementById('projects'),
-//     document.getElementById('skills')
-// ];
-// const varied_items = [
-//     document.getElementById('part-2'),
-//     document.getElementById('timeline-toggle'),
-// ]
+try {
+    const darkElements = [
+        document.body,
+        document.getElementById('first-jumbo'),
+        document.getElementById(
+            'projects'
+        )
+    ]
+    const variedElements = [
+        document.getElementById('noob-navbar'),
+        document.getElementById('part-2'),
+        document.getElementById('newsletter')
+    ]
+} catch (e) {
+    // since the elements don't exist, hide the button
+    try {
+        const darkModeButton = document.getElementById('dark-mode-button');
+        darkModeButton.style.display = 'none';
+    } catch (e) {
+        // wow... our button doesn't even exist
+        // FIXME make sure this doesn't happen
 
-// function toggleMode() {
-//     if (mode == 'dark') {
-//         items.forEach(function (item) {
-//             item.classList.add('light-mode');
-//         });
+    }
+}
 
-//         varied_items.forEach(function (item) {
-//             item.classList.add('varied-light-mode');
-//         });
+let darkMode = true;
 
-//         mode = 'light';
+function toggleMode() {
+    if (darkMode) {
+        darkElements.forEach(function (element) {
+            element.classList.add('light-mode');
+        });
+        variedElements.forEach(function (element) {
+            element.classList.add('varied-light-mode');
+        });
 
-//     } else if (mode == 'light') {
-//         items.forEach(function (item) {
-//             item.classList.remove('light-mode');
-//         });
-
-//         varied_items.forEach(function(item) {
-//             item.classList.remove('varied-light-mode');
-//         })
-//         mode = 'dark';
-//     } else {
-//         console.error('Invalid mode: ' + mode);
-//     }
-// }
+        darkMode = false;
+    } else {
+        darkElements.forEach(function (element) {
+            element.classList.remove('light-mode');
+        });
+        variedElements.forEach(function (element) {
+            element.classList.remove('varied-light-mode');
+        });
+        darkMode = true;
+    }
+    console.log(darkMode)
+}
